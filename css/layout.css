@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(10, 46, 13);
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    padding: 0;
+    margin: 0;
+}
+
+.topo {
+    text-align: center;
+    background-color: #3f5515;
+    padding: 30px;
+}
+
+.topo h1 {
+    font-size: 50px;
+}
+
+.menuTopo {
+    text-align: center;
+    background-color: #000000;
+    overflow: hidden;
+    position: sticky;
+    top: 10px;
+}
+
+.menuTopo ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuTopo ul li {
+    float: left;
+}
+
+.menuTopo a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+    background-color: #466b46;
+    border-radius: 2px;
+    margin: 5px;
+}
+
+.menuTopo a:hover {
+    background-color: #a8d3b9;
+    color: #000;
+    font-weight: bold;
+}
+
+.corpo {
+    width: 1024px;
+    margin: 10px auto;
+}
+
+.corpo::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.esquerda {
+    width: 75%;
+    float: left;
+}
+
+.direita {
+    width: 25%;
+    float: left;
+    background-color: #642481;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #a12c2c;
+}
+
+.destaque {
+    background-color: rgb(38, 87, 71);
+    padding: 20px;
+    margin: 20px;
+}
+
+.Imagens{
+    width: 100%;
+
+}
+
+.Imagens img{
+    width: 100%;
+
+}
+
+.container{
+    background-image: url(../imagem/Neve.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+
+.container p{
+    position: relative;
+    bottom: 380px;
+    right: 45px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .corpo {
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .esquerda,
+    .direita {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .menuTopo ul li,
+    .menuTopo ul,
+    .menuTopo a {
+        float: none;
+        width: 100%;
+    }
+
+}
